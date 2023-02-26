@@ -85,20 +85,20 @@ public class TV {
 	}
 	
 	public void canalUp() {
-		canal++;
+		this.canal++;
 	}
 	
 	public void canalDown() {
-		canal--;
+		this.canal--;
 	}
 	
 	public void volumenUp() {
-		volumen++;
+		this.volumen++;
 		
 	}
 	
 	public void volumenDown() {
-		volumen--;	
+		this.volumen--;	
 	}
 
 }
