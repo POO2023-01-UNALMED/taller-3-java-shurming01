@@ -28,12 +28,8 @@ public class TV {
 		return canal;
 	}
 
-	public void setCanal(int canal) {
-		if (this.estado == true) {
-			if (canal >= 1 && canal <= 120) {
-				this.canal = canal;
-			}
-		}
+	public void setCanal(int canal) {//
+		this.canal = canal;
 	}
 
 	public int getPrecio() {
@@ -85,11 +81,21 @@ public class TV {
 	}
 	
 	public void canalUp() {
-		this.canal++;
+		if (this.estado == true) {
+			if (canal >= 1 && canal < 120) {
+				canal++;
+			}
+		}
+		
+	
 	}
 	
 	public void canalDown() {
-		this.canal--;
+		if (this.estado == true) {
+			if (canal > 1 && canal <= 120) {
+				setCanal(canal--);
+			}
+		}
 	}
 	
 	public void volumenUp() {
