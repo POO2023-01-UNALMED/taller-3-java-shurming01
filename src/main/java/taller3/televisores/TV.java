@@ -34,7 +34,6 @@ public class TV {
 				this.canal = canal;
 			}
 		}
-		
 	}
 
 	public int getPrecio() {
@@ -102,6 +101,4 @@ public class TV {
 		volumen--;	
 	}
 
-	
-	
 }
