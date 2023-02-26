@@ -28,12 +28,13 @@ public class Control {
 		tv.volumenDown();
 	}
 	
-	public void setCanal(int canal) {// No estoy seguro
+	public void setCanal(int canal) {
 		tv.setCanal(canal);	
 	}
 	
-	public void enlazar(TV tv) { // NO estoy seguro
-		this.tv = tv;		
+	public void enlazar(TV tv, Control control) { 
+		this.tv = tv;
+		tv.control = this;
 
 	}
 
@@ -45,8 +46,4 @@ public class Control {
 	public void setTv(TV tv) {
 		this.tv = tv;
 	}
-	
-	
-	
-
 }
