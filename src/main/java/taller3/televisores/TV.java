@@ -94,7 +94,7 @@ public class TV {
 	
 	public void volumenUp() {
 		if (this.estado == true) {
-			if (volumen > 0 || volumen < 7){
+			if (volumen > 0 && volumen < 7){
 				volumen++;
 			}
 		}
@@ -102,7 +102,7 @@ public class TV {
 	
 	public void volumenDown() {
 		if (this.estado == true) {
-			if (volumen > 0 || volumen <= 7){
+			if (volumen > 0 && volumen <= 7){
 				volumen--;
 			}
 		}
